@@ -1,0 +1,16 @@
+.anchor{
+    -fx-background-color: white;
+    -fx-background-image: url("back.jpg");
+    -fx-background-size: stretch;
+
+}
+.mainAnchor{
+-fx-background-color: #2E3348;
+}
+.button{
+    -fx-background-color: #F39C63;
+}
+.scroll-pane .viewport {
+    -fx-background-image: url('back.jpg');
+    -fx-background-size: stretch;
+}

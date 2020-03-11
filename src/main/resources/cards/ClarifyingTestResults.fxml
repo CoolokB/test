@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane styleClass="mainAnchor" stylesheets="@../res/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.test.uiControllers.ClarifyingTestResultsController">
+   <AnchorPane fx:id="vAbsentPane" prefHeight="700.0" prefWidth="480.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <Label layoutX="50.0" layoutY="23.0" text="Додаток 1.1.2. до Порядку проведення профілювання безробітних осіб, зареєстрованих" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <Label layoutX="239.0" layoutY="14.0" text="в державній службі зайнятості">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <Label layoutX="2.0" layoutY="419.0" text="Результат -" AnchorPane.leftAnchor="2.0" />
+      <Label layoutX="2.0" layoutY="446.0" text="Сума за результатами Додатків 1.1.1 та  1.1.2" AnchorPane.leftAnchor="2.0" />
+      <Label fx:id="motivationDescription" layoutX="2.0" layoutY="473.0" text="опис мотивация" AnchorPane.leftAnchor="2.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="profileLabel" layoutX="2.0" layoutY="535.0" text="profilelabel" AnchorPane.leftAnchor="2.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="profileDescription" layoutX="2.0" layoutY="558.0" text="profiledescription" AnchorPane.leftAnchor="2.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="2.0" layoutY="678.0" text="Підпис безробітного________________" AnchorPane.leftAnchor="2.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="2.0" layoutY="630.0" text="Дата _______________ " AnchorPane.leftAnchor="2.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="2.0" layoutY="655.0" text="Підпис фахівця ЦЗ__________________________  " AnchorPane.leftAnchor="2.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="motivationLevel" layoutX="71.0" layoutY="419.0" text="-" />
+      <Label layoutX="89.0" layoutY="419.0" text="балів)" />
+      <Label fx:id="newMotivationLevel" layoutX="253.0" layoutY="447.0" text="-" />
+      <Label fx:id="previousMotivationLevel" layoutX="140.0" layoutY="418.0" prefHeight="17.0" prefWidth="206.0" text="firstmotivation" />
+      <GridPane layoutX="44.0" layoutY="47.0" maxWidth="460.0" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="40.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <Label fx:id="surname" text="-" />
+         <Label fx:id="firstQuestion" wrapText="true" GridPane.rowIndex="1">
+            <font>
+               <Font size="11.0" />
+            </font>
+         </Label>
+         <Label fx:id="firstAnswer" text="-" GridPane.rowIndex="2">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+         <Label fx:id="secondQuestion" GridPane.rowIndex="3">
+            <font>
+               <Font size="11.0" />
+            </font>
+         </Label>
+         <Label fx:id="secondAnswer" text="-" GridPane.rowIndex="4">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+         <Label fx:id="thirdQuestion" wrapText="true" GridPane.rowIndex="5">
+            <font>
+               <Font size="11.0" />
+            </font>
+         </Label>
+         <Label fx:id="thirdAnswer" text="-" GridPane.rowIndex="6">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+         <Label fx:id="fourthQuestion" GridPane.rowIndex="7">
+            <font>
+               <Font size="11.0" />
+            </font>
+         </Label>
+         <Label fx:id="fourthAnswer" text="-" GridPane.rowIndex="8">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+         <Label fx:id="fifthQuestion" GridPane.rowIndex="9">
+            <font>
+               <Font size="11.0" />
+            </font>
+         </Label>
+         <Label fx:id="fifthAnswer" text="-" GridPane.rowIndex="10">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+      </GridPane>
+   </AnchorPane>
+   <Button fx:id="vAbsentPrint" layoutX="6.0" layoutY="700.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Друкувати" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+      <font>
+         <Font name="Lobster" size="16.0" />
+      </font>
+   </Button>
+</AnchorPane>
